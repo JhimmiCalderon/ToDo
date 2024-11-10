@@ -1,28 +1,38 @@
-Aplicación de Notas "ToDo"
-Este proyecto es una aplicación para gestionar notas, desarrollada con Laravel y Vue.js. Permite a los usuarios registrar, listar, editar y eliminar sus notas de forma sencilla, además de autenticarse para asegurar la privacidad de su información.
+# Aplicación de Notas "ToDo" 
 
-Características
+Este proyecto es una aplicación de gestión de notas desarrollada con **Laravel** y **Vue.js**, siguiendo buenas prácticas de desarrollo. Permite a los usuarios gestionar sus notas de manera eficiente, ofreciendo funcionalidades de autenticación, creación, edición, listado y eliminación de notas.
 
-Backend (Laravel)
-Framework: Laravel 8 o superior.
-API REST con autenticación usando personal tokens o JWT (Laravel Fortify o Passport recomendado).
+## Características
 
-Funciones principales:
-Crear, editar, listar y eliminar notas.
-Ordenar notas por fecha de creación o vencimiento.
-Comandos Artisan personalizados para gestionar las notas desde la consola.
-Validación de datos para asegurar la integridad.
-Migraciones para la base de datos (sin incluir archivos SQL).
+### Backend (Laravel)
+- **Framework:** Laravel 8+
+- **API REST** con autenticación mediante tokens personales o JWT (Laravel Fortify o Passport).
+- **CRUD** de notas (Creación, Edición, Listado, Eliminación).
+- Listado de notas con opción de ordenamiento por **fecha de creación** o **fecha de vencimiento**.
+- Comandos Artisan para gestionar notas desde la consola.
+- Validación de datos.
+- Migraciones para la base de datos (sin archivos SQL).
 
-Frontend (Vue.js)
-Framework: Vue 2.7 o superior.
-Vue Router para manejar las rutas.
-Vuex para la gestión del estado global.
+### Frontend (Vue.js)
+- **Framework:** Vue 2.7+
+- Manejo de rutas con **Vue Router**.
+- Gestión de estado con **Vuex**.
+- Pantallas:
+  - Inicio de sesión y registro.
+  - Pantalla principal con listado de notas.
+  - Formulario para crear y editar notas.
+- Validación de formularios en el frontend.
+- Peticiones AJAX con **Axios**.
 
-Vistas incluidas:
-Inicio de sesión y registro.
-Pantalla principal para ver y administrar notas.
-Formulario para la creación y edición de notas.
-Peticiones AJAX mediante Axios para interactuar con el backend.
-Validación de datos en el frontend para mejorar la experiencia del usuario.
+## Requisitos
+- **PHP 7.3+** con Composer.
+- **Node.js 14+** con npm o yarn.
+- **MySQL 8** o **PostgreSQL 12** como motor de base de datos.
+
+## Instalación
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repositorio.git
+   cd tu-repositorio
 
